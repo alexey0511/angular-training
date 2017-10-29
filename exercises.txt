@@ -1,0 +1,76 @@
+Exercise 1: Components
+ 1. Create new component called notice-board
+ 2. Modify App Component template to display only notice board component
+ 3. Create property notices inside the component with a type as an array of strings
+ 4. Provide hardcoded array of notices (['Notice 1', 'Notice 2']) on component initialization, before it renders ...
+ 5. Change html template of hte notice board component to display list of notices as an unordered list, using *ngFor
+ 6. Copy Paste Styles for notice-board
+ 
+
+Exercise 2: Classes / Interfaces
+ 1. Create new Interface Notice with following properties:
+   - id ( number)
+   - type ( string )
+   - text ( string )
+   - owner ( string )
+   - date  ( date )
+
+ 2. Change property in notice-board component to be an array notices
+ 3. Download file with a hardcoded notices and save it somewhere within app directory ( e.g. app/mocks/notices )
+ 4. Display list of notices from the downloaded file in notice-board component ( you'd need to import module ... )
+ 5. Change notice board html to display text of notice object
+
+
+Exercise 3: Component Communication
+  1. Create new component 'Notice'
+  2. Copy paste html and styles into component
+  3. Inside the component create input property notice with type Notice
+  4. Modify notice html template to display:
+     - type as class of root div ('sticky-note'
+     - display notice text in text div
+     - display notice owner in owner div
+  5. Copy Paste html & styles for notice-board 
+  6. In notice-board component, use notice component to render notices. ( Don't forget that notice component requires an input ) 
+
+Exercise 4: Pipes
+ 1. In notice component render a date next to notice author and display it in a nice format ( use pipes )
+
+
+Exercise 5: Service
+ 1. Create new service
+ 2. Provide service in app module
+ 3. Create method inside of service called fetchNotices that returns list of notices ( same as it was in notice board)
+ 4. In notice-board component get list of notices from service rather than module import. 
+  
+
+Exercise 6: Http
+ 1. Download and start server app
+ 2. Import httpModule into the app
+ 3. Change service to fetch notices from the server (http://localhost:3000/notices)
+     - use rxjs 'map' function to return json from the response
+ 4. Change notice-board component to get data from observable 
+
+Exercise 7: Router
+ 1. Create new component new-notice
+ 2. Import router module into app module and declare 2 routes:
+   - '' should render NoticeBoardComponent,
+   - 'new-notice' should render NewNotice components
+   - all other routes should be redirected to home
+ 3. Copy paste app component styles
+ 4. Update app component template
+   - add router-outlet compoennt
+   - add div with class navigation and 2 child links to existing routes
+   - route should have active class when it's active
+
+
+Exercise 8: Forms
+  1. Copy paste new-notice html & css
+  2. Import FormsModule
+  3. Add new property 'newNoticeText' and link it to textarea using ngModel
+  4. Implement save method and trigger it on save button click
+     - in newNoteComponent create onSave method and trigger it on click
+     - Inside onSave method -> use data service to do an http call
+     - create new method inside of data service to post data to 'http://localhost:3000/new-notice
+     - just posting object with notice text should be enough
+  5. Make save button disable when textarea is empty
+  6. On cancel navigate back to home page

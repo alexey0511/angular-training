@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "first",
+    "text": "Need help with organising trainign",
+    "date": "2017-10-20T03:22:01.718Z",
+    "owner": "Alexey"
+  },
+  {
+    "id": 2,
+    "type": "second",
+    "text": "Who want to have a payrise",
+    "date": "2017-10-20T03:22:01.718Z",
+    "owner": "Godfrey"
+  },
+  {
+    "id": 3,
+    "type": "third",
+    "text": "Please secure your passwords",
+    "date": "2017-10-20T03:22:01.718Z",
+    "owner": "Gavin"
+  },
+  {
+    "id": 4,
+    "type": "fourth",
+    "text": "Looking for good angular developer",
+    "date": "2017-10-20T03:22:01.718Z",
+    "owner": "Brian"
+  }
+]

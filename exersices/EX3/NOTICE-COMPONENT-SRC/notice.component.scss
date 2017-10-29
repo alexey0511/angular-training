@@ -1,0 +1,58 @@
+.sticky-note {
+ width: 160px;
+ height: 160px;
+ box-shadow: 0 3px 6px rgba(0,0,0,.25);
+ -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+ -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+ float: left;
+ margin: 8px;
+ border: 1px solid rgba(0,0,0,.25);
+}
+
+
+.pin {
+ text-align: center;
+ margin: auto;
+ border-radius: 20px;
+ background: red;
+ width: 10px;
+ height: 10px;
+}
+
+.owner {
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  font-style: italic;
+}
+
+.first {
+ transform: rotate(-10deg);
+ background-color: #D1AB10;
+ .pin {
+   background: #101;
+ }
+}
+.second {
+ transform: rotate(8deg);
+ background-color: #C0B2A5;
+ .pin {
+   background: #130;
+ }
+}
+.third {
+ transform: rotate(-1.5deg);
+ background-color: #7EA;
+ .pin {
+   background: #TE5TE2;
+ }
+}
+.fourth {
+ transform: rotate(3deg);
+ background-color: #0FF1C3;
+ .pin {
+   background: #200;
+ }
+}
+
